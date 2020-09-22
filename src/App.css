@@ -1,38 +1,208 @@
-.App {
-  text-align: center;
-}
+/* global stlyes */
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+* {
+  font-family: 'Balsamiq Sans', cursive;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+body {
+  background-color:rgb(13, 13, 13);
+  font-weight: normal;
+  min-height: 100vh;
+  min-width: 100vw;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+/* end of global styles */
+
+/* hero */
+
+.hero {
+  width: 100vw;
+  height: 100vh;
+  background-image: url('../src/assets/back1.jpg');
+  background-size: 820px;
+  background-size: cover;
+}
+
+/* end of hero */
+
+/* navbar */
+
+.navbar {
+  background-color: black;
+}
+
+.cic-logo {
+  color: white;
+}
+
+.navbar-end .title {
+  margin-bottom: 0;
+}
+
+#root > nav > div > div.navbar-end > a {
+  background-color:black;
+}
+
+#root > nav > div > div.navbar-end > a:hover {
+  background-color:rgb(13, 13, 13);
+}
+
+/* end of navbar */
+
+/* about page */
+
+.quote p {
+  font-style: italic;
+}
+
+.quoter {
+  text-align: right;
+  width: 75%;
+}
+
+.center-this {
+  text-align: center;
+}
+
+.sport {
+  color: white;
+  text-transform: uppercase;
+  margin-right: 10px;
+}
+
+.warning-msg {
+  font-weight: bold;
+  text-align: center;
+  margin: 10px;
+}
+
+/* end of about page */
+
+/* team page */
+
+.card {
+  background-size: contain;
+  display: flex;
+  flex-direction: column;
+  margin: 20px;
+}
+
+.card-content, .staff-header {
+  background-color: rgba(0, 186, 255, 1);
+  text-align: center;
+  padding: 10px;
+  display: block;
+}
+
+.card-header-title {
+  height: 75px;
+  color: white;
+  justify-content: center;
+}
+
+#root > section > div > div > div {
+  margin: 0 auto;
+}
+
+.card-content p {
+  color: black;
+}
+
+#root > section > div > div > div > div > div > h3, #root > section > div > div > div > div > div > h4 {
+  color: white;
+}
+
+/* end of team page */
+
+/* gallery */
+
+.gallery-container {
+  padding-top: 4%;
+}
+
+
+/* end of gallery page */
+
+/* contact page */
+
+.contact-blurb {
+  margin-bottom: 10px; 
+}
+
+.contact-location {
+  border: 2px solid rgba(0, 186, 255, 1);
+}
+
+.contact-info {
+  color: white;
+  margin: 50px 0;
+  text-transform: uppercase;
+  margin-right: 10px;
+}
+
+p a {
+  color: white;
+  text-transform: uppercase;
+}
+
+p a:hover {
+  color: rgba(0, 186, 255, 1);
+}
+
+.info {
+  margin: 10px 10px;
+}
+
+.map {
+  border: 2px solid rgba(0, 186, 255, 1);
+  margin: 20px 0;
+}
+
+@media (min-width:1025px) { 
+  /* big landscape tablets, laptops, and desktops */ 
+  .gallery-container {
+    margin: 0 auto;
+    margin-left: 10%;
   }
-  to {
-    transform: rotate(360deg);
+
+  .gallery-pics {
+    width: 800px;
+  }
+
+  #root > section > div > div.gallery-container > div > div > div.swiper-button-prev {
+    position: fixed;
+    margin-left: 5%;
+    margin-top: -10%;
+  }
+
+  #root > section > div > div.gallery-container > div > div > div.swiper-button-next {
+    position: fixed;
+    margin-right: 5%;
+    margin-top: -10%;
+  }
+}
+
+@media (min-width:1281px) { 
+  /* hi-res laptops and desktops */ 
+  .gallery-container {
+    margin: 0 auto;
+    margin-left: 10%;
+  }
+
+  .gallery-pics {
+    width: 1100px;
+  }
+
+  #root > section > div > div.gallery-container > div > div > div.swiper-button-prev {
+    position: fixed;
+    margin-left: 5%;
+    margin-top: -10%;
+  }
+
+  #root > section > div > div.gallery-container > div > div > div.swiper-button-next {
+    position: fixed;
+    margin-right: 5%;
+    margin-top: -10%;
   }
 }
